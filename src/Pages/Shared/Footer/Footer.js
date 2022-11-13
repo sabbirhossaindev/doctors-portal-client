@@ -9,8 +9,8 @@ const Footer = () => {
                 background: `url(${footer})`,
                 backgroundSize: 'cover'
             }}
-        className="p-10">
-            <div className='footer'>
+        className="p-10 shadow-2xl rounded-xl">
+            <div className='footer justify-around'>
                 <div>
                     <span className="footer-title">Services</span>
                     <Link to="/" className="link link-hover">Branding</Link>
