@@ -13,8 +13,8 @@ const Navbar = () => {
 
     return (
         <div className="navbar bg-base-100 flex justify-between">
-            <div className="navbar-start">
-                <div className="dropdown">
+            <div className="navbar-start flex justify-between lg:block w-full flex-row-reverse">
+                <div className="dropdown dropdown-bottom dropdown-end">
                 <label tabIndex={0} className="btn btn-ghost lg:hidden">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
                 </label>
@@ -22,7 +22,7 @@ const Navbar = () => {
                     {menuItem}
                 </ul>
                 </div>
-                <Link to='/' className="btn btn-ghost normal-case text-xl text-primary">Doctor Portal</Link>
+                <Link to='/' className="btn btn-ghost normal-case text-2xl text-primary">Doctor Portal</Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal p-0">
