@@ -5,9 +5,11 @@ import { toast } from 'react-toastify';
 import { AuthContext } from '../../contexts/AuthProvider';
 
 const SignUp = () => {
+    
     const { register, handleSubmit, formState: { errors } } = useForm();
     const { createUser, updateUser } = useContext(AuthContext);
     const [signUpError, setSignUPError] = useState('')
+
     const handleSignUp = (data) => {
         console.log(data);
         setSignUPError('');

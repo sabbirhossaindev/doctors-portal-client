@@ -9,8 +9,8 @@ const Navbar = () => {
     
     const handleLogOut = () => {
         logOut()
-            .then(toast.success('Log Out Successful !'))
-            .catch(error => toast.error(error.message))
+        .then(toast.success('Log Out Successful !'))
+        .catch(error => toast.error(error.message))
     }
 
     const menuItem = <>
@@ -21,7 +21,8 @@ const Navbar = () => {
         {
             user?.uid ?
             <>
-                <li className='text-xl font-semibold btn btn-primary rounded-xl'><button onClick={handleLogOut}>Sign out</button></li>
+                <li className='text-xl font-semibold'><Link to="/dashboard">Dashboard</Link></li>
+                <li className='text-xl font-semibold'><button onClick={handleLogOut}>Sign out</button></li>
             </>
             : <li className='text-xl font-semibold'><Link to="/login">Login</Link></li>}
     </>
