@@ -14,6 +14,7 @@ const Navbar = () => {
     }
 
     const menuItem = <>
+        <li><input type="checkbox" className="toggle toggle-md mt-4 mr-3 rounded-full" checked /></li>
         <li className='text-xl font-semibold'><Link to='/'>Home</Link></li>
         <li className='text-xl font-semibold'><Link to='/appointment'>Appointment</Link></li>
         <li className='text-xl font-semibold'><Link to='/about'>About</Link></li>
@@ -25,7 +26,7 @@ const Navbar = () => {
                 <button onClick={handleLogOut} className=' btn btn-accent text-xl font-semibold text-white'>Sign out</button>
             </>
             : <button className='text-xl font-semibold btn btn-accent text-white'><Link to="/login">Login</Link></button>}
-    </>
+        </>
 
     return (
         <div className="navbar bg-base-100 flex justify-between">
