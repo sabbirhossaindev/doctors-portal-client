@@ -1,5 +1,6 @@
 import { format } from 'date-fns';
 import React from 'react';
+import { toast } from 'react-toastify';
 
 const BookingModal = ({ treatment, selectedDate, setTreatment }) => {
     const { name, slots } = treatment;
@@ -26,6 +27,7 @@ const BookingModal = ({ treatment, selectedDate, setTreatment }) => {
         // and once data is saved then close the modal 
         // and display success toast
         console.log(booking);
+        toast.success('Booking Appointment Submit.')
         setTreatment(null)
     }
     return (

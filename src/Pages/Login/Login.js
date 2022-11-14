@@ -5,9 +5,11 @@ import { toast } from 'react-toastify';
 import { AuthContext } from '../../contexts/AuthProvider';
 
 const Login = () => {
+
     const { register, formState: { errors }, handleSubmit } = useForm();
     const { signIn } = useContext(AuthContext);
     const [loginError, setLoginError] = useState('');
+    
     const location = useLocation();
     const navigate = useNavigate();
 

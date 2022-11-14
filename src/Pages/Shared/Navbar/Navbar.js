@@ -22,9 +22,9 @@ const Navbar = () => {
             user?.uid ?
             <>
                 <li className='text-xl font-semibold'><Link to="/dashboard">Dashboard</Link></li>
-                <li className='text-xl font-semibold'><button onClick={handleLogOut}>Sign out</button></li>
+                <button onClick={handleLogOut} className=' btn btn-accent text-xl font-semibold text-white'>Sign out</button>
             </>
-            : <li className='text-xl font-semibold'><Link to="/login">Login</Link></li>}
+            : <button className='text-xl font-semibold btn btn-accent text-white'><Link to="/login">Login</Link></button>}
     </>
 
     return (
