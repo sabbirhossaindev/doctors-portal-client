@@ -1,9 +1,12 @@
-import React, { useContext } from 'react';
+import React, { useContext} from 'react';
 import { Link } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import { AuthContext } from '../../../contexts/AuthProvider';
+// import './Navbar.css';
 
 const Navbar = () => {
+
+    // const [darkMode, setDarkMode] = useState(false);
 
     const { user, logOut } = useContext(AuthContext);
     
@@ -14,7 +17,22 @@ const Navbar = () => {
     }
 
     const menuItem = <>
-        <li><input type="checkbox" className="toggle toggle-md mt-4 mr-3 rounded-full" checked /></li>
+        {/* <div className={darkMode ? "dark-mode" : "light-mode"}>
+            <div className="container mt-4">
+                <span style={{ color: darkMode ? "grey" : "yellow" }}>☀︎</span>
+                    <div className="switch-checkbox">
+                        <label className="switch">
+                            <input type="checkbox" onChange={() => setDarkMode(!darkMode)} />
+                            <span className="slider round"> </span>
+                        </label>
+                    </div>
+                <span style={{ color: darkMode ? "#c96dfd" : "grey" }}>☽</span>
+            </div>
+            <div>
+                <h1>{darkMode ? "Dark" : "Light"}</h1>
+            </div>
+        </div> */}
+
         <li className='text-xl font-semibold'><Link to='/'>Home</Link></li>
         <li className='text-xl font-semibold'><Link to='/appointment'>Appointment</Link></li>
         <li className='text-xl font-semibold'><Link to='/about'>About</Link></li>
@@ -23,9 +41,9 @@ const Navbar = () => {
             user?.uid ?
             <>
                 <li className='text-xl font-semibold'><Link to="/dashboard">Dashboard</Link></li>
-                <button onClick={handleLogOut} className=' btn btn-accent text-xl font-semibold text-white'>Sign out</button>
+                <button onClick={handleLogOut} className=' btn btn-accent text-xl font-semibold text-white mt-6'>Sign out</button>
             </>
-            : <button className='text-xl font-semibold btn btn-accent text-white'><Link to="/login">Login</Link></button>}
+            : <button className='text-xl font-semibold btn btn-accent text-white mt-6'><Link to="/login">Login</Link></button>}
         </>
 
     return (
