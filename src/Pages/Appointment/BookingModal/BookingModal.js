@@ -29,9 +29,23 @@ const BookingModal = ({ treatment, selectedDate, setTreatment }) => {
         // TODO: send data to the server
         // and once data is saved then close the modal 
         // and display success toast
-        console.log(booking);
-        toast.success('Booking Appointment Submit.')
-        setTreatment(null)
+        
+        fetch('http://localhost:5000/bookings', {
+            method: 'POST',
+            headers: {
+                'content-type' : 'application/json'
+            },
+            body: JSON.stringify(booking)
+        })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
+                if (data.acknowledeged) {
+                    setTreatment(null);
+                    toast.success('Booking Confirmed.')
+                }
+            })
+        
     }
     return (
         <>
