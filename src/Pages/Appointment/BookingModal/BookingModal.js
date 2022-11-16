@@ -1,10 +1,13 @@
 import { format } from 'date-fns';
-import React from 'react';
+import React, { useContext } from 'react';
 import { toast } from 'react-toastify';
+import { AuthContext } from '../../../contexts/AuthProvider';
 
 const BookingModal = ({ treatment, selectedDate, setTreatment }) => {
     const { name, slots } = treatment;
     const date = format(selectedDate, 'PP');
+
+    const {user} = useContext(AuthContext)
 
     const handleBooking = event => {
         event.preventDefault();
@@ -50,9 +53,9 @@ const BookingModal = ({ treatment, selectedDate, setTreatment }) => {
                             }
                         </select>
 
-                        <input name='name' type="text" placeholder="Your Name" className="input w-full input-bordered" required />
+                        <input name='name' type="text" placeholder="Your Name" defaultValue={user?.displayName} disabled className="input w-full input-bordered" required />
 
-                        <input name='email' type="email" placeholder="Your Email" className="input w-full input-bordered" required />
+                        <input name='email' type="email" placeholder="Your Email" defaultValue={user?.email} disabled className="input w-full input-bordered" required />
 
                         <input name='phone' type="text" placeholder="Your Number" className="input w-full input-bordered" required />
 

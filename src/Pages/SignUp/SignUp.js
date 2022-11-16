@@ -28,6 +28,7 @@ const SignUp = () => {
                 }
                 updateUser(userInfo)
                     .then(() => { })
+                    navigate('/')
                     .catch(err => toast.message(err));
             })
             .catch(error => {
