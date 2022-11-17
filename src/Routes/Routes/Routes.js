@@ -3,7 +3,7 @@ import DashboardLayout from "../../Layout/DashboardLayout";
 import Main from "../../Layout/Main";
 import About from "../../Pages/About/About";
 import Appointment from "../../Pages/Appointment/Appointment/Appointment";
-import DashBoard from "../../Pages/DashBoard/DashBoard/DashBoard";
+// import DashBoard from "../../Pages/DashBoard/DashBoard/DashBoard";
 import MyAppointment from "../../Pages/DashBoard/MyAppointment/MyAppointment";
 import Home from "../../Pages/Home/Home/Home";
 import Login from "../../Pages/Login/Login";
