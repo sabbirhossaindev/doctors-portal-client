@@ -64,6 +64,7 @@ const Navbar = () => {
                     {menuItem}
                 </ul>
             </div>
+            <label htmlFor="dashboard-drawer" className="btn btn-primary drawer-button lg:hidden">Open drawer</label>
         </div>
     );
 };
