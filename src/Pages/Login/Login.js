@@ -42,7 +42,7 @@ const Login = () => {
             .then(result => {
                 toast.success('User Created Successfully...🥰')
             console.log(result.user);
-            // navigate(from, {replace: true});   
+            navigate(from, {replace: true});   
         })
     }
 
