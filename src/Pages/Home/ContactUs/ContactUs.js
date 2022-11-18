@@ -8,7 +8,9 @@ const ContactUs = () => {
             background: `url(${appointment})`,
             backgroundSize: 'cover'
             }}
-        className='p-10 rounded-lg'>
+        className='p-10 rounded-lg' data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000">
             <div className='text-center'>
                 <h3 className='font-bold text-xl text-primary'>Contact Us</h3>
                 <h1 className='text-white font-bold text-4xl'>Stay connected with us</h1>
