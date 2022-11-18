@@ -3,11 +3,12 @@ import React, { useContext } from 'react';
 import { AuthContext } from '../../../contexts/AuthProvider';
 
 const MyAppointment = () => {
+    console.log(localStorage.getItem('accessToken'));
 
     const { user } = useContext(AuthContext);
 
     const url = `http://localhost:5000/bookings?email=${user?.email}`;
-
+    
     const { data: bookings = [] } = useQuery({
         queryKey: ['bookings', user?.email],
         queryFn: async () => {
@@ -22,7 +23,7 @@ const MyAppointment = () => {
     })
 
     return (
-        <div>
+        <div data-aos="zoom-in-left">
             <h2 className='text-4xl mb-10 text-center text-secondary'>My Appointments</h2>
             <div className="overflow-x-auto">
                 <table className="table w-full">

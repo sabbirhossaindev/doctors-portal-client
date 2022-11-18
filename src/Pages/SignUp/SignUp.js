@@ -3,20 +3,22 @@ import { useForm } from 'react-hook-form';
 import { Link, useLocation, useNavigate} from 'react-router-dom';
 import { toast } from 'react-toastify';
 import { AuthContext } from '../../contexts/AuthProvider';
+import useToken from '../../hooks/useToken';
 
 const SignUp = () => {
 
+    const [signUpError, setSignUPError] = useState('');
+    const [createdUserEmail, setCreatedUserEmail] = useState('')
+    const [token] = useToken(createdUserEmail);
     const { register, handleSubmit, formState: { errors } } = useForm();
     const { createUser, updateUser, signInWithGoogle } = useContext(AuthContext);
-    const [signUpError, setSignUPError] = useState('')
-
     const navigate = useNavigate();
     const location = useLocation();
     
     const from = location.state?.from?.pathname || '/';
 
+
     const handleSignUp = (data) => {
-        console.log(data);
         setSignUPError('');
         createUser(data.email, data.password)
             .then(result => {
@@ -27,14 +29,19 @@ const SignUp = () => {
                     displayName: data.name
                 }
                 updateUser(userInfo)
-                    .then(() => { })
-                    saveUser(data.name, data.email)
-                    .catch(err => toast.message(err));
+                    .then(() => {
+                        saveUser(data.name, data.email);
+                    })
+                    .catch(err => console.log(err));
             })
             .catch(error => {
                 console.log(error)
                 setSignUPError(error.message)
             });
+    }
+
+    if(token){
+        navigate('/');
     }
 
     const handleGoogleSignIn = () => {
@@ -46,8 +53,8 @@ const SignUp = () => {
         })
     }
 
-    const saveUser = (name, email) => {
-        const user = { name, email };
+    const saveUser = (name, email) =>{
+        const user ={name, email};
         fetch('http://localhost:5000/users', {
             method: 'POST',
             headers: {
@@ -55,12 +62,11 @@ const SignUp = () => {
             },
             body: JSON.stringify(user)
         })
-            .then(res => res.json())
-            .then(data => {
-                console.log(data);
-                navigate('/')
-            })
-    };
+        .then(res => res.json())
+        .then(data =>{
+            setCreatedUserEmail(email);
+        })
+    }
 
     return (
         <div className='h-[800px] flex justify-center items-center' data-aos="zoom-in-up" data-aos-offset="500" data-aos-duration="500">
