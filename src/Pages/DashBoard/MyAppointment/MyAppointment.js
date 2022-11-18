@@ -3,7 +3,7 @@ import React, { useContext } from 'react';
 import { AuthContext } from '../../../contexts/AuthProvider';
 
 const MyAppointment = () => {
-    console.log(localStorage.getItem('accessToken'));
+    // console.log(localStorage.getItem('accessToken'));
 
     const { user } = useContext(AuthContext);
 
