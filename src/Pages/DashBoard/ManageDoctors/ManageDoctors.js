@@ -93,7 +93,7 @@ const ManageDoctors = () => {
                     successAction = {handleDeleteDoctor}
                     successButtonName="Delete"
                     modalData = {deletingDoctor}
-                    closeModal = {closeModal}
+                    // closeModal = {closeModal}
                 >
                 </ConfirmationModal>
             }
