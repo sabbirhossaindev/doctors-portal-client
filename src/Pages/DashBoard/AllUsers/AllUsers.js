@@ -29,6 +29,22 @@ const AllUsers = () => {
         })
     }
 
+    // const handleDeleteDoctor = users => {
+    //     fetch(`http://localhost:5000/users/${users._id}`, {
+    //         method: 'DELETE', 
+    //         headers: {
+    //             authorization: `bearer ${localStorage.getItem('accessToken')}`
+    //         }
+    //     })
+    //     .then(res => res.json())
+    //     .then(data => {
+    //         if(data.deletedCount > 0){
+    //             refetch();
+    //             toast.success(`Doctor ${users.name} deleted successfully`)
+    //         }
+    //     })
+    // }
+
     return (
         <div>
             <h2 className='text-4xl mb-10 text-center text-secondary'>All Users</h2>

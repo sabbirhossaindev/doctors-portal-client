@@ -7,6 +7,7 @@ import Loading from '../../Shared/Loading/Loading';
 const ManageDoctors = () => {
     const [deletingDoctor, setDeletingDoctor] = useState(null);
 
+    // closeModal
     const closeModal = () => {
         setDeletingDoctor(null);
     }
@@ -52,8 +53,8 @@ const ManageDoctors = () => {
     }
 
     return (
-        <div>
-            <h2 className="text-3xl">Manage Doctors: {doctors?.length}</h2>
+        <div className='p-3'>
+            <h2 className='text-4xl mb-10 text-center text-secondary'>Manage Doctors: {doctors?.length}</h2>
             <div className="overflow-x-auto">
                 <table className="table w-full">
                     <thead>
