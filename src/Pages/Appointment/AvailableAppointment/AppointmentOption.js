@@ -10,7 +10,7 @@ const { name, slots, price } = appointmentOption;
             <div className="card-body text-center">
                 <h2 className="text-2xl text-secondary font-bold text-center">{name}</h2>
                 <p>{slots.length > 0 ? slots[0] : 'Try Another day'}</p>
-                <p><small className='text-rose-600'>price: $ {price}</small></p>
+                <p className='text-xl'> price ${price}</p>
                 <p>{slots.length} {slots.length > 1 ? 'spaces' : 'space'} available</p>
                 <div className="card-actions justify-center">
                     <label
