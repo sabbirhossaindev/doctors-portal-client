@@ -9,6 +9,7 @@ const CheckoutForm = ({ booking }) => {
     const [clientSecret, setClientSecret] = useState("");
 
     const stripe = useStripe();
+    console.log(stripe);
     const elements = useElements();
     const { price, email, patient, _id } = booking;
 
@@ -99,6 +100,7 @@ const CheckoutForm = ({ booking }) => {
 
 
     }
+    console.log('stripe',stripe, 'clientSecret',clientSecret);
 
     return (
         <>
