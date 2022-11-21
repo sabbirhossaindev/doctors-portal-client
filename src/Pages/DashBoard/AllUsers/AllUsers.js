@@ -46,7 +46,7 @@ const AllUsers = () => {
     // }
 
     return (
-        <div>
+        <div data-aos="zoom-in-left" className='p-3'>
             <h2 className='text-4xl mb-10 text-center text-secondary'>All Users</h2>
             <div className="overflow-x-auto">
             <table className="table w-full">

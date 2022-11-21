@@ -17,7 +17,7 @@ const Payment = () => {
         return <Loading></Loading>
     }
     return (
-        <div>
+        <div data-aos="zoom-in-left" className='p-5'>
             <h3 className="text-3xl">Payment for {treatment}</h3>
             <p className="text-xl">Please pay <strong>${price}</strong> for your appointment on {appointmentDate} at {slot}</p>
             <div className='w-96 my-12'>

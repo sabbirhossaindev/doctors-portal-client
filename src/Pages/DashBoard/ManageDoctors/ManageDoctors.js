@@ -53,7 +53,7 @@ const ManageDoctors = () => {
     }
 
     return (
-        <div className='p-3'>
+        <div className='p-3' data-aos="zoom-in-left">
             <h2 className='text-4xl mb-10 text-center text-secondary'>Manage Doctors: {doctors?.length}</h2>
             <div className="overflow-x-auto">
                 <table className="table w-full">
