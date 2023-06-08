@@ -1,5 +1,6 @@
 import React from 'react';
 import treatment from '../../../assets/images/treatment.png'
+import { Link } from 'react-router-dom';
 
 const Dental = () => {
     return (
@@ -8,8 +9,8 @@ const Dental = () => {
                 <img src={treatment} className=" rounded-xl lg:w-1/2" alt='Dental' data-aos="flip-left"/>
                 <div data-aos="fade-down-left">
                     <h1 className="text-5xl font-bold">Exceptional Dental Care, on Your Terms</h1>
-                    <p className="py-6 text-xl text-gray-500">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsumis that it has a more-or-less normal distribution of letters,as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page</p>
-                    <button className="btn btn-primary bg-gradient-to-r from-primary to-secondary text-white">Get Treatment</button>
+                    <p className="py-6 text-xl text-gray-500">We welcome new patients of all ages. Our experienced team is committed to creating a relaxing atmosphere, to make sure you feel at ease and comfortable right from the first time you step into our practice. Feel confident and know you’re in good hands every time you visit My Midland Dentist.</p>
+                    <button className="btn btn-primary bg-gradient-to-r from-primary to-secondary text-white"><Link to='/appointment'>Get Treatment</Link></button>
                 </div>
             </div>
         </div>

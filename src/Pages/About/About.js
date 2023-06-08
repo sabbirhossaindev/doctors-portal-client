@@ -15,22 +15,22 @@ const About = () => {
 
             <div className="carousel w-full">
             <div id="item1" className="carousel-item w-full carousel-img relative">
-                <img src={img1} alt="" className="w-full rounded-xl" />
+                <img src={img1} alt="" className="w-full rounded-xl about-img" />
             </div> 
             <div id="item2" className="carousel-item w-full carousel-img relative">
-                <img src={img2} alt="" className="w-full rounded-xl" />
+                <img src={img2} alt="" className="w-full rounded-xl about-img" />
             </div> 
             <div id="item3" className="carousel-item w-full carousel-img relative">
-                <img src={img3} alt="" className="w-full rounded-xl" />
+                <img src={img3} alt="" className="w-full rounded-xl about-img" />
             </div> 
             <div id="item4" className="carousel-item w-full carousel-img relative">
-                <img src={img4} alt="" className="w-full rounded-xl" />
+                <img src={img4} alt="" className="w-full rounded-xl about-img" />
             </div>
             <div id="item5" className="carousel-item w-full carousel-img relative">
-                <img src={img5} alt="" className="w-full rounded-xl" />
+                <img src={img5} alt="" className="w-full rounded-xl about-img" />
             </div>
             <div id="item6" className="carousel-item w-full carousel-img relative">
-                <img src={img6} alt="" className="w-full rounded-xl" />
+                <img src={img6} alt="" className="w-full rounded-xl about-img" />
             </div>
             
             </div> 
@@ -57,8 +57,8 @@ const About = () => {
                         </div>
                         <div className='w-full' data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500">
                             <h1 className="my-5 text-5xl font-bold">About My Self </h1>
-                            <p className="py-6 text-xl text-gray-500">Assalamu-alaykum I'm Sabbir Hossain CEO & Founder of 𝒮𝒶𝒷𝒷𝒾𝓇..𝕀𝕋 ⏧. I am currently studying for a Diploma in Engineering of Computer Science. My campus name is Habiganj polytechnic Institute. I am a programmer, web developer, app developer & Freelancer. My birth place is located in Rangpur District Badarganj Thana Ramnathpur Union.I love Football & Coding. I like to learn and teach. </p>
-                            <Link className='btn btn-secondary' to='/'><button className="text-white text-xl inline-flex justify-center items-center">See More </button></Link>
+                            <p className="py-6 text-xl text-gray-500">I am a maxillofacial surgeon , I finished my B.D.S from chennai in the year 2012 and completed my M.D.S in oral and maxillofacial surgery  in the year 2017. Here in this clinic we are provide all dental treatments from root canal treatment's , Dental implant to complex maxillofacial surgery , Full mouth rehab. Call us to enquire about your dental wellbeing.</p>
+                            <Link className='btn btn-secondary' to='/appointment'><button className="text-white text-xl inline-flex justify-center items-center">See More </button></Link>
                         </div>
                     </div>
                 </div>

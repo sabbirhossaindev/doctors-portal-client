@@ -33,7 +33,7 @@ const SignUp = () => {
                         saveUser(data.name, data.email);
                     })
                     .catch(err => console.log(err));
-            })
+                })
             .catch(error => {
                 console.log(error)
                 setSignUPError(error.message)

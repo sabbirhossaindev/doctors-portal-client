@@ -13,3 +13,6 @@
   .person{
     background: linear-gradient(to right,  #151515 0%,rgba(11, 11, 11, 0) 100%);
   }
+  .about-img{
+    height: 500px;
+  }

@@ -34,7 +34,7 @@ const Navbar = () => {
         </div> */}
 
         <li className='text-xl font-semibold'><Link to='/'>Home</Link></li>
-        <li className='text-xl font-semibold'><Link to='/appointment'>Appointment</Link></li>
+        <li className='text-xl font-semibold'><Link to='/appointment' id='#appointment'>Appointment</Link></li>
         <li className='text-xl font-semibold'><Link to='/about'>About</Link></li>
         <li className='text-xl font-semibold'><Link to='/reviews'>Reviews</Link></li>
         {
@@ -43,7 +43,8 @@ const Navbar = () => {
                 <li className='text-xl font-semibold'><Link to="/dashboard">Dashboard</Link></li>
                 <button onClick={handleLogOut} className=' btn btn-accent text-xl font-semibold text-white'>Sign out</button>
             </>
-            : <button className='text-xl font-semibold btn btn-accent text-white'><Link to="/login">Login</Link></button>}
+            : <button className='text-xl font-semibold btn btn-accent text-white'><Link to="/login">Login</Link></button>
+            }
         </>
 
     return (
