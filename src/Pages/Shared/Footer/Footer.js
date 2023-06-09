@@ -46,7 +46,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className='text-center mt-32'>
-                <p className='text-xl font-bold text-secondary'>Copyright {formattedToday} - All right reserved by ©  Doctor's Portal Ltd {new Date().getFullYear()}.</p>
+                <p className='text-xl font-bold text-secondary'>Copyright {formattedToday} - All right reserved by ©  Patient Management Ltd {new Date().getFullYear()}.</p>
             </div>
         </footer>
     );
