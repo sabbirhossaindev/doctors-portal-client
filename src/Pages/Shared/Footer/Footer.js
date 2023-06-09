@@ -22,17 +22,21 @@ const Footer = () => {
             <div className='footer justify-around'>
                 <div>
                     <span className="footer-title">Services</span>
-                    <Link to="/" className="link link-hover">Branding</Link>
-                    <Link to="/" className="link link-hover">Design</Link>
-                    <Link to="/" className="link link-hover">Marketing</Link>
-                    <Link to="/" className="link link-hover">Advertisement</Link>
+                    <Link to="/appointment" className="link link-hover">Teeth Orthodontics</Link>
+                    <Link to="/appointment" className="link link-hover">Cosmetic Dentistry</Link>
+                    <Link to="/appointment" className="link link-hover">Teeth Cleaning</Link>
+                    <Link to="/appointment" className="link link-hover">Cavity Protection</Link>
+                    <Link to="/appointment" className="link link-hover">Pediatric Dental</Link>
+                    <Link to="/appointment" className="link link-hover">Oral Surgery</Link>
                 </div>
                 <div>
-                    <span className="footer-title">Company</span>
-                    <Link to="/" className="link link-hover">About us</Link>
-                    <Link to="/" className="link link-hover">Contact</Link>
-                    <Link to="/" className="link link-hover">Jobs</Link>
-                    <Link to="/" className="link link-hover">Press kit</Link>
+                    <span className="footer-title">Patient management</span>
+                    <Link to="/home" className="link link-hover">Home</Link>
+                    <Link to="/about" className="link link-hover">About us</Link>
+                    <Link to="/home" className="link link-hover">Service</Link>
+                    <Link to="/appointment" className="link link-hover">Appointment</Link>
+                    <Link to="/home" className="link link-hover">Contact</Link>
+                    <Link to="/reviews" className="link link-hover">Reviews</Link>
                 </div>
                 <div>
                     <span className="footer-title">Legal</span>

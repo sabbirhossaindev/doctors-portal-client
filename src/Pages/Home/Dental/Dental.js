@@ -10,7 +10,7 @@ const Dental = () => {
                 <div data-aos="fade-down-left">
                     <h1 className="text-5xl font-bold">Exceptional Dental Care, on Your Terms</h1>
                     <p className="py-6 text-xl text-gray-500">We welcome new patients of all ages. Our experienced team is committed to creating a relaxing atmosphere, to make sure you feel at ease and comfortable right from the first time you step into our practice. Feel confident and know you’re in good hands every time you visit My Midland Dentist.</p>
-                    <button className="btn btn-primary bg-gradient-to-r from-primary to-secondary text-white"><Link to='/appointment'>Get Treatment</Link></button>
+                    <button className="btn btn-primary bg-gradient-to-r from-primary to-secondary text-white"><Link to='/https://wa.me/01888559287' target='_blank'>Get chart what's up</Link></button>
                 </div>
             </div>
         </div>
