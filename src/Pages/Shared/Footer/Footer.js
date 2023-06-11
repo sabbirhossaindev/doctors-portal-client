@@ -31,11 +31,11 @@ const Footer = () => {
                 </div>
                 <div>
                     <span className="footer-title">Patient management</span>
-                    <Link to="/home" className="link link-hover">Home</Link>
+                    <Link to="/" className="link link-hover">Home</Link>
                     <Link to="/about" className="link link-hover">About us</Link>
-                    <Link to="/home" className="link link-hover">Service</Link>
+                    <Link to="/" className="link link-hover">Service</Link>
                     <Link to="/appointment" className="link link-hover">Appointment</Link>
-                    <Link to="/home" className="link link-hover">Contact</Link>
+                    <Link to="/" className="link link-hover">Contact</Link>
                     <Link to="/reviews" className="link link-hover">Reviews</Link>
                 </div>
                 <div>
