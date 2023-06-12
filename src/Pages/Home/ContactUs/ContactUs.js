@@ -1,6 +1,7 @@
 import React from 'react';
 import appointment from '../../../assets/images/appointment.png';
 import './Contact.css';
+import { toast } from 'react-toastify';
 
 const ContactUs = () => {
     const addSubmit = event => {
@@ -15,19 +16,19 @@ const ContactUs = () => {
         }
         console.log('addInfo', addInfo);
 
-    //     fetch(`https://dev-sabbir-server.vercel.app/submit`, {
-    //     method: 'POST',
-    //     headers: {
-    //         'Content-Type' : 'application/json'
-    //     },
-    //     body: JSON.stringify(addInfo)
-    // })
-        // .then(res => res.json())
-        // .then(data => {
-        //     // console.log(data);
-        //     toast.success('Message sand.😮 please check your email your answer will be given after a few minutes later📝 Thank you !🥰');
-        //     form.reset('');
-        // })
+        fetch(`https://dev-sabbir-server.vercel.app/submit`, {
+        method: 'POST',
+        headers: {
+            'Content-Type' : 'application/json'
+        },
+        body: JSON.stringify(addInfo)
+    })
+        .then(res => res.json())
+        .then(data => {
+            // console.log(data);
+            toast.success('Message sand.😮 please check your email your answer will be given after a few minutes later📝 Thank you !🥰');
+            form.reset('');
+        })
     }
     return (
         <section className="hero mt-16" style={{
