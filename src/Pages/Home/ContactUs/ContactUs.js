@@ -16,7 +16,7 @@ const ContactUs = () => {
         }
         console.log('addInfo', addInfo);
 
-        fetch(`https://dev-sabbir-server.vercel.app/submit`, {
+        fetch(`https://doctors-portal-server-one.vercel.app/submit`, {
         method: 'POST',
         headers: {
             'Content-Type' : 'application/json'
